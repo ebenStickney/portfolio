@@ -1,0 +1,84 @@
+
+html, body {
+    width:100%;
+    height: auto;
+}
+
+/*Canvas breakout*/
+canvas {
+            background-image: url("images/download.jpeg");
+            background-size: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+/*Parallax*/
+
+h1.title-name {
+  letter-spacing: -15px;
+  font-family: Open Sans;
+  color: white;
+  text-align: right;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 200px;
+  padding: 2% 5%;
+}
+
+.profilePic {
+    padding-left: 2%;
+    z-index: 1;
+    
+}
+.profilePic img {
+    border: 4px solid #9AB3D1;
+    border-radius: 50%;
+}
+
+.mainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.parallaxContainer.firstBreak {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  background: url(/images/corno_nero_mountains_4k-1920x1080.jpg);
+
+}
+.parallaxContainer.secondBreak {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 100vh;
+  transform: translateZ(-2px) scale(3);
+  z-index: -2;
+  background: url(/images/corno_nero_mountains_4k-1920x1080.jpg);
+
+}
+.content {
+    padding: 2% 5%;
+}
+
+.contentContainer {
+  display: block;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+  height: 500px;
+}
+
+.bg-content {
+    background: url(/images/corno_nero_mountains_4k-1920x1080.jpg);
+    height: 500px;
+    width: 100%;
+}
